@@ -31,10 +31,25 @@ Methods
                 numberToConvert (int) >> the number to be converted  
   => returns: baseString (string) >> the converted base number  
 8. longIP(): converts IP to a long string (without the '.' seperator)  
-  => parameter: IP (string) >> the IP to be converted  
-  => returns: IPMerged (string) >> the long IP
-9. InsertDotInIP(): join separated octet ips
-    => parameter: longIP (string) (binary IP) >> the long IP
-   => returns: longIP with dots
+  => parameter: IP (string) >> the IP to be converted    
+  => returns: IPMerged (string) >> the long IP  
+9. InsertDotInIP(): join separated octet ips  
+    => parameter: longIP (string) (binary IP) >> the long IP  
+   => returns: longIP with dots  
+10. breakIPsIntoOctet(): breaks the IPs into octets and stores them in a list  
+    => parameter: longIP  
+    => returns: list of octet IPs  
+11. findNetworkBroadcastandSubnetAddresses(): finds the network address and subnet address of a given network  
+    => parameters: IP >> the IP address; cidr >> the CIDR of the network  
+    => returns: networkAddress, broadcastAddress, subnetMaskAddress of the newtwork  
+12. IPToBinary(): converts an IP to binary IP  
+    => parameter: IP  
+    => returns: binaryIP (string), octetList (List)  
+13. findHostRange(): find the hosts in a network  
+    => parameters: networkAddress; broadcastAddress  
+    => returns: hosts  
+14. replaceLastOctet(): replaces the last octet of an IP with last octets of the host IPs
+    parameters: IP; newOctet
+    returns: 
    
   
