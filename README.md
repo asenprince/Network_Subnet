@@ -48,8 +48,11 @@ Methods
 13. findHostRange(): find the hosts in a network  
     => parameters: networkAddress; broadcastAddress  
     => returns: hosts  
-14. replaceLastOctet(): replaces the last octet of an IP with last octets of the host IPs
-    parameters: IP; newOctet
-    returns: 
+14. subnet(): this is the global method that performs the subnetting.  
+    => parameters: numberOfSubnets  
+    => returns: a subnetData (pandas DataFrame) with subnetID, Network Address, FirstHost Address, LastHost Address, Broadcast Address, Subnetmask Address, CIDR  
+
+
+
    
   
