@@ -1,6 +1,7 @@
 # Network Subnetting Class (For Only Class C Networks)
 Requirement: User has to provide full ip address (including CIDR) during instantiation in the form XXX.XXX.XXX.XXX/YY, where X represents IP Address, and Y represents CIDR
 
+##### Notebook: Network.ipynb
 Attributes
 ---------------
 IP: Extracts the IP Address from the Full IP Address provided by the User  
